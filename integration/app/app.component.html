@@ -1,0 +1,21 @@
+<div class="panel">
+    <img class="logo" src="https://habrastorage.org/webt/k7/ih/pc/k7ihpcg6w-jz-rzksmiyuip5_so.png" />
+
+    <div class="panel-content">
+        <h2>Store:</h2>
+        <pre>{{ snapshot | async | json }}</pre>
+    </div>
+</div>
+
+<div class="menu">
+    Examples:
+    <span>🚀 <a class="link" href="https://stackblitz.io/github/ngxs-labs/data" target="_blank">Stackblitz</a></span>
+    <span>🏀 <a class="link" [routerLink]="['count']">CountState</a></span>
+    <span>🧭 <a class="link" [routerLink]="['todo']">TodoState</a></span>
+</div>
+
+<br />
+
+<div class="container">
+    <div class="content"><router-outlet></router-outlet></div>
+</div>
